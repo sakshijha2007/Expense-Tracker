@@ -7,27 +7,53 @@
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-    <h2>Hello there</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
-      laborum harum fugiat quod quasi quis, similique enim, reiciendis ad sequi
-      obcaecati sit? At laudantium repudiandae magnam molestias dolores rem
-      pariatur consectetur deleniti excepturi ut ducimus voluptate aperiam a
-      quisquam velit, facilis facere voluptatibus possimus consequuntur
-      aspernatur illo tempora. Rem libero rerum perspiciatis fugiat, velit
-      sapiente sequi aliquam sed saepe ut assumenda quam nesciunt natus, harum
-      voluptatum untur repellendus eos nihil ea dolor
-      vitae. Iure exercitationem sit, quas voluptates ut architecto unde
-      perferendis laboriosariam suscipit omnis deleniti nemo enim
-      dolore optio reprehenderit, ipsum maiores eaque veritatis explicabo nihil
-      facilis distinctio itaque. Ipsa, ullam enim expedita repellendus non
-      labore, ducimus beatae aut voluptatum eaque sequi, nesciunt molestias in
-      velit. Cum iste natus aut perspiciatis vel quos optio, rerum a. Amet
-      fugiat hic eos, maxime eius quidem deserunt veniam sapiente adipisci
-      distinctio atque velit harum qui repellat fugit quo doloribus eaque
-      quisquam! Distinctio, eaque ex? Sapiente rerum aspernatur non eveniet
-      consequatur magni? Repellat nihil et ipsum totam sequi temporibus quasi
-      rem. Beatae, distinctio labore.
-    </p>
+    <div class="sidebar">
+      <h2>Finance</h2>
+      <ul>
+        <li class="active"> Dashboard </li>
+        <li> Transaction</li>
+        <li> Reports </li>
+      </ul>
+         <button id="addbtn"> + Add Transaction </button>
+    </div>
+
+    <div class="main">
+      <div class="topbar">
+        <h3> Financial Intelligence </h3>
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <div class="content">
+        <div class="hero">
+          <h1>$124,592</h1>
+          <p>+12.5% this month</p>
+          
+          <button class="income"> Add Income </button>
+          <button class="expense"> Add Expense </button>
+        </div>
+       
+        <div class="card">
+          <h4>Cash Flow</h4>
+
+        <div class="chart">
+            <div class="bar" style="height: 60%;"></div>
+            <div class="bar" style="height: 80%;"></div>
+            <div class="bar" style="height: 40%;"></div>
+            <div class="bar" style="height: 50%;"></div>
+           </div>
+        </div>
+
+        <div class="card">
+          <h4>Transaction</h4>
+
+          <ul id="txList">
+            <li> Apple Store - $1299</li>
+            <li> Salary + $8890</li>
+            <li> Restaurant -$284</li>
+          </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
